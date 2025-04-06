@@ -1,4 +1,4 @@
-**PROJECT4**
+**PROJECT 8**
 This project depicts Test UI Automation with simple BDD test approach - Cucumber and Gherkin keyword
 
 NOTE: THis also involves use of two maven plugins for parallel test execution.
