@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+Test set: parallel.ParallelRun
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 63.068 s <<< FAILURE! - in parallel.ParallelRun
+runScenario(parallel.ParallelRun)  Time elapsed: 41.162 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <button class="action search" type="submit"> is not clickable at point (1527,129) because another element <input id="search" class="input-text" name="q" type="text"> obscures it
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [b7801bb1-7da8-43fc-83c4-133ab5f25d6d, clickElement {id=c290b8c7-92f7-4160-af65-a7c1f6ee36fa}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 135.0.1, container:hostname: 3ec797e19341, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 5.15.167.4-microsoft-standa..., moz:processID: 240, moz:profile: /tmp/rust_mozprofileW4Teof, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.0.2:4444/sessio..., se:containerName: 3ec797e19341, se:noVncPort: 7900, se:vnc: ws://172.23.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.23.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (b7801bb1-7da8-43fc-83c4-133ab5f25d6d)] -> xpath: //*[@id='search_mini_form']/div[2]/button]
+Session ID: b7801bb1-7da8-43fc-83c4-133ab5f25d6d
+
+runScenario(parallel.ParallelRun)  Time elapsed: 49.895 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+The element with the reference f9412e44-08f3-4a34-9dc5-e4287ee99863 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [698cd956-93dc-407e-b60a-29b7e6b2d63b, getElementText {id=f9412e44-08f3-4a34-9dc5-e4287ee99863}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 135.0.1, container:hostname: 3ec797e19341, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 5.15.167.4-microsoft-standa..., moz:processID: 238, moz:profile: /tmp/rust_mozprofiletgU4Un, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.0.2:4444/sessio..., se:containerName: 3ec797e19341, se:noVncPort: 7900, se:vnc: ws://172.23.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.23.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (698cd956-93dc-407e-b60a-29b7e6b2d63b)] -> tag name: a]
+Session ID: 698cd956-93dc-407e-b60a-29b7e6b2d63b
+

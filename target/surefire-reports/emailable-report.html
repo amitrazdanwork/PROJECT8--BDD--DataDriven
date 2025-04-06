@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">61,488</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">parallel.ParallelRun</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1743916242282</td><td rowspan="2">41145</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">parallel.ParallelRun</td><td><a href="#m2">runScenario</a></td><td rowspan="1">1743916242282</td><td rowspan="1">35698</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">parallel.ParallelRun#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify product search functionality on What&apos;s new page&quot;</td><td>&quot;Optional[Product Search - Pre Login]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button class=&quot;action search&quot; type=&quot;submit&quot;&gt; is not clickable at point (1527,129) because another element &lt;input id=&quot;search&quot; class=&quot;input-text&quot; name=&quot;q&quot; type=&quot;text&quot;&gt; obscures it
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [b7801bb1-7da8-43fc-83c4-133ab5f25d6d, clickElement {id=c290b8c7-92f7-4160-af65-a7c1f6ee36fa}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 135.0.1, container:hostname: 3ec797e19341, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 5.15.167.4-microsoft-standa..., moz:processID: 240, moz:profile: /tmp/rust_mozprofileW4Teof, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.0.2:4444/sessio..., se:containerName: 3ec797e19341, se:noVncPort: 7900, se:vnc: ws://172.23.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.23.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (b7801bb1-7da8-43fc-83c4-133ab5f25d6d)] -&gt; xpath: //*[@id=&apos;search_mini_form&apos;]/div[2]/button]
+Session ID: b7801bb1-7da8-43fc-83c4-133ab5f25d6d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at pages.WhatsNewPage.ClickSearchIconButton(WhatsNewPage.java:45)
+	at parallel.ProductSearch_PreLogin_StepDef.user_clicks_on_search_icon_on_what_s_new_page(ProductSearch_PreLogin_StepDef.java:34)
+	at ✽.User clicks on Search icon on What&apos;s new page(file:///C:/Users/razda/eclipse-workspace/Cucumber/PROJECT4/src/test/resources/parallel/ProductSearch_PreLogin.feature:14)
+... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">parallel.ParallelRun#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify product search functionality on What&apos;s new page&quot;</td><td>&quot;Optional[Product Search - Pre Login]&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: The element with the reference f9412e44-08f3-4a34-9dc5-e4287ee99863 is stale; either its node document is not the active document, or it is no longer connected to the DOM
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.1&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [698cd956-93dc-407e-b60a-29b7e6b2d63b, getElementText {id=f9412e44-08f3-4a34-9dc5-e4287ee99863}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 135.0.1, container:hostname: 3ec797e19341, moz:accessibilityChecks: false, moz:buildID: 20250216192613, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 5.15.167.4-microsoft-standa..., moz:processID: 238, moz:profile: /tmp/rust_mozprofiletgU4Un, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.23.0.2:4444/sessio..., se:containerName: 3ec797e19341, se:noVncPort: 7900, se:vnc: ws://172.23.0.2:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.23.0.2:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Element: [[RemoteWebDriver: firefox on linux (698cd956-93dc-407e-b60a-29b7e6b2d63b)] -&gt; tag name: a]
+Session ID: 698cd956-93dc-407e-b60a-29b7e6b2d63b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+	at pages.WhatsNewPage.getNumberOfRecords(WhatsNewPage.java:53)
+	at parallel.ProductSearch_PreLogin_StepDef.user_gets_the_result_outcome_for_on_what_s_new_page(ProductSearch_PreLogin_StepDef.java:42)
+	at ✽.User gets the result outcome for &quot;Bag&quot; on What&apos;s new page(file:///C:/Users/razda/eclipse-workspace/Cucumber/PROJECT4/src/test/resources/parallel/ProductSearch_PreLogin.feature:15)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">parallel.ParallelRun#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Page title of What&apos;s new page is &quot;What&apos;s New&quot;&quot;</td><td>&quot;Optional[Product Search - Pre Login]&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
